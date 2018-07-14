@@ -1,0 +1,336 @@
+/* @media screen and () {
+
+} */
+/*General*/
+  body {
+    background-color: #fffcce;
+    color: #5d5f71;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  nav div,
+  nav a {
+    cursor: pointer;
+  }
+
+  .spin {
+    transform: rotate(180deg);
+  }
+
+  .spin2 {
+    transform: rotate(-180deg);
+  }
+
+  .no-break {
+    white-space: pre;
+  }
+
+  .content-back {
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  /*Active display/font color*/
+  .active {
+    display: block !important;
+  }
+
+  .active-txt {
+    color: #f3c98b !important;
+  }
+/*End General*/
+
+/*Header + Nav*/
+  header {
+    border-bottom: 1px solid #5d5f71;
+  }
+
+  .profile-contain {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-contain {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-photo {
+    border-radius: 50%;
+    background-image: url("images/shapeimage_1.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 150px;
+    background-position-x: -12px;
+  }
+
+  .profile-text {
+    display: inline-block;
+  }
+
+  .profile-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-text h2 {
+    font-size: 1rem;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .drop-btn {
+    font-size: 35px;
+    transition: .3s;
+  }
+
+  #drop-main {
+    transition: .3s;
+  }
+
+  .nav-sm,
+  .treatment-menu-sm,
+  .treatment-menu-lg {
+    border-radius: 5px;
+  }
+
+  #icon-treatment-sm,
+  #icon-treatment-lg {
+    transition: .3s;
+  }
+
+  .treatment-menu-sm {
+    height: auto;
+    overflow-y: hidden;
+    position: absolute;
+    background-color: #AD8A64;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    transition: .3s;
+    z-index: 1;
+  }
+
+  .treatment-menu-lg {
+    height: auto;
+    overflow-y: hidden;
+    position: absolute;
+    background-color: #AD8A64;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    transition: .3s;
+    z-index: 1;
+  }
+
+  .treatment-menu-sm a,
+  .treatment-menu-lg a  {
+    display: block;
+  }
+
+  /*Header Queries*/
+    /*MOBILE*/
+    @media screen and (max-width: 500px) {
+        .image-contain {
+          display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+      .image-contain {
+        width: 80px;
+        height: 80px;
+      }
+
+      .profile-photo {
+        background-size: 130px;
+      }
+
+      .profile-text {
+        padding-left: 10px;
+      }
+
+      .profile-text h1 {
+        font-size: 1.35rem;
+      }
+
+      .profile-text h2 {
+        font-size: .9rem;
+      }
+
+      .nav-sm {
+        display: block;
+        background: #5D5F71;
+        color: white;
+        padding: 5px;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        transition: .3s;
+        overflow-y: hidden;
+      }
+
+      .nav-sm a {
+        display: block;
+      }
+
+      .treatment-drop-sm {
+        display: block;
+      }
+
+      .nav-lg {
+        display: none;
+      }
+    }
+
+    /*End MOBILE*/
+    /*TABLET*/
+    @media screen and (min-width: 768px) {
+      .profile-contain {
+        justify-content: center;
+      }
+
+      .profile-text {
+        padding-left: 15px;
+      }
+
+      .nav-lg {
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.25rem;
+        padding-top: 1rem;
+      }
+
+      .nav-lg a,
+      .nav-lg div {
+        padding: 1rem;
+      }
+
+      .treatment-menu-lg {
+        min-width: 196px;
+        left: auto;
+        right: 0px;
+      }
+
+      .treatment-menu-lg a {
+        padding: 0rem;
+        font-size: 1rem;
+      }
+    }
+    /*End TABLET*/
+    /*DESKTOP*/
+    @media screen and (min-width: 992px) {
+      .nav-lg {
+        align-items: flex-end;
+        font-size: 1.25rem;
+      }
+
+      .treatment-menu-lg a {
+        font-size: 1.15rem;
+      }
+    }
+    /*End DESKTOP*/
+  /*End Queries*/
+/*End Header and Nav*/
+/*Content*/
+  #about,
+  #cnp,
+  #approach,
+  #couples,
+  #play-t,
+  #infant {
+    display: none;
+  }
+
+  #content h1 {
+    border-bottom: 2px solid #5d5f71
+  }
+  /*Content Queries*/
+  @media screen and (max-width: 768px) {
+    #content h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #content p {
+      font-size: 1.25rem;
+    }
+
+    #content li {
+      font-size: 1.25rem
+    }
+
+    #content h5 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    #content p {
+      font-size: 1.5rem;
+    }
+
+    #content li {
+      font-size: 1.5rem
+    }
+
+    #content h1 {
+      font-size: 2.75rem;
+    }
+
+    #content h5 {
+      font-size: 1.75rem;
+    }
+  }
+  /*End Content Queries*/
+
+  /*About*/
+    .who-contain {
+      text-align: center;
+    }
+
+    .who-contain img {
+      width: 80%;
+      height: auto;
+    }
+    /*About Queries*/
+    @media screen and (max-width: 768px) {
+      .who-contain img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    /*End About Queries*/
+  /*End About*/
+
+  /*Contact and Payment*/
+  #cnp h1 {
+     border: none;
+  }
+  /*End Contact and Payment*/
+
+  /*Couples*/
+  #couples h1 {
+    border: none;
+  }
+  /*Couples*/
+
+  /*My Approach*/
+  #approach h1 {
+    border: none;
+  }
+  /*End My Approach*/
+
+  /*Child Therapy*/
+  #play-t h1 {
+    border: none;
+  }
+  /*End Child Therapy*/
+
+  /*Infant Parent*/
+  #infant h1 {
+    border: none;
+  }
+  /*End Infant Parent*/
+/*End Content*/
